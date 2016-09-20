@@ -51,9 +51,14 @@ var app = app || {};
 			}
 
 			this.$el.html(this.template(this.model.toJSON()));
+
+			//toggleClass function comes from jQuery library
+			//the second argument is a boolean that adds or removes the
+			//name of the class
 			this.$el.toggleClass('completed', this.model.get('completed'));
 			this.$el.toggleClass('priority', this.model.get('priority') == 1);
 			this.$el.toggleClass('priority2', this.model.get('priority') == 2);
+			
 			this.toggleVisible();
 			this.$input = this.$('.edit');
 			return this;
