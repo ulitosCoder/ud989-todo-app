@@ -284,6 +284,13 @@ label[for='toggle-all'] {
 
 #todo-list li.priority:not(.completed) label {
 	color: #d66;
+	font: italic bold;
+}
+
+#todo-list li.priority2:not(.completed) label {
+	color: #d66;
+	font: italic bold 30px Georgia, serif;
+	text-decoration: underline;
 }
 
 #todo-list li.priority .priority-btn:after {
